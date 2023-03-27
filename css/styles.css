@@ -93,6 +93,10 @@ body {
   padding-right: 15px;
 }
 
+.mobile-menu-container {
+  position: relative;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 426px;
@@ -158,8 +162,8 @@ body {
 
 .mobile-menu-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 32px;
+  right: 32px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -181,12 +185,33 @@ body {
   text-transform: capitalize;
   color: var(--side-nav-color);
 }
+
+.site-mav-mobile-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.site-nav-mobile {
+  padding-bottom: 264px;
+  padding-top: 80px;
+}
+
+.contacts-mobile {
+  margin-bottom: 48px;
+}
+
 .contacts-mobile-item {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
+.social-media-mobile {
+  display: flex;
+  gap: 56px;
+  justify-content: left;
+}
+
 /* .page-header{
 padding-top: 24px;
   padding-bottom: 24px;
