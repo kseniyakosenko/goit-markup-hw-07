@@ -95,6 +95,9 @@ body {
 
 .mobile-menu-container {
   position: relative;
+  padding-top: 80px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -191,8 +194,7 @@ body {
 }
 
 .site-nav-mobile {
-  padding-bottom: 264px;
-  padding-top: 80px;
+  margin-bottom: 264px;
 }
 
 .contacts-mobile {
