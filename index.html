@@ -47,15 +47,15 @@
           </ul>
         </address>
 
-        <button type="button" class="mobile-menu-open">
+        <button type="button" class="mobile-menu-open js-open-menu">
           <svg class="mobile-menu-open-icon" width="32px" height="22px">
             <use href="./images/sprite.svg#icon-hamburger">
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close-btn">
+          <button class="mobile-menu-close-btn js-close-menu">
           <svg class="mobile-menu-close-icon" width="8px" height="8px">
             <use href="./images/sprite.svg#icon-close-button"></use>
           </svg>
@@ -66,7 +66,7 @@
             <li class="site-mav-mobile-item"><a href="">Contacts</a></li>
           </ul>
           <ul class="contacts-mobile list">
-            <li class="site-mav-mobile-item">
+            <li class="site-mav-mobile-item site-mav-mobile-item-tel">
               <a href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
             <li class="contacts-mobile-item">
@@ -549,5 +549,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
