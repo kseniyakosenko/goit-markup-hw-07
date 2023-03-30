@@ -568,6 +568,241 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
+/* ========================MOBILE Advantages========================= */
+
+@media screen and (max-width: 1199px) {
+  .advantages-icon {
+    display: none;
+  }
+
+  .advantages-box {
+    display: none;
+  }
+}
+
+.container-advantages {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+  margin-bottom: 8px;
+}
+
+.section-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+/* ========================TABLET Advantages========================= */
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .advantages-list .advantages-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+
+  .item-title {
+    text-align: left;
+  }
+}
+
+/* ========================DESCTOP Advantages========================= */
+
+@media screen and (min-width: 1200px) {
+  .advantages-list .advantages-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+
+  .item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .advantages-box {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/* ======================WHAT WE ARE DOING MOBILE / TABLET================ */
+
+@media screen and (max-width: 1199px) {
+  .container-work {
+    display: none;
+  }
+}
+
+/* ======================WHAT WE ARE DOING DESCTOP================ */
+
+.works-list {
+  display: flex;
+}
+
+.work-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.work-list-item {
+  background: linear-gradient(
+    0deg,
+    rgba(77, 90, 229, 0.1),
+    rgba(77, 90, 229, 0.1)
+  );
+  background-blend-mode: soft-light, normal;
+  border: 1px solid var(--fiter-background-color);
+}
+
+.container-work {
+  padding-bottom: 120px;
+}
+
+/* стиль для H2 */
+.section-title {
+  margin-bottom: 72px;
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* ==============================OUR TEAM MOBILE======================= */
+.team-section {
+  background-color: var(--our-team-background-color);
+}
+
+.item-title-team {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.team-container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.team-list-item {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 264px;
+  text-align: center;
+  padding-bottom: 32px;
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.social-list-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--hero-button-background-color);
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--fiter-background-active-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.social-media-icon {
+  fill: #f4f4fd;
+}
+
+/* ==============================OUR TEAM TABLET======================= */
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    margin: 0;
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .item-title-team {
+    text-align: center;
+  }
+}
+
+/* ==============================OUR TEAM DESCTOP======================= */
+@media screen and (min-width: 1200px) {
+  .team-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
 /* .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -621,17 +856,13 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--hero-button-active-background-color);
 } */
 /* =========================Преымущества======================= */
-
+/* 
 .advantages-box {
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
   background: #f4f4fd;
   border-radius: 4px;
-  /* padding-right: 100px;
-padding-left: 100px;
-padding-bottom: 24px;
-padding-top: 24px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -652,116 +883,20 @@ padding-top: 24px; */
 
 .advantages-list-item > .item-title {
   margin-bottom: 8px;
-}
+} */
 
 /* стиль для H3 */
-.item-title {
+/* .item-title {
   color: var(--title-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-}
+} */
 /* стиль для p */
-.section-item a {
+/* .section-item a {
   color: var(--main-color);
-}
-/*================================= Что мы делаем секция ==============================*/
-.works-list {
-  display: flex;
-}
-
-.work-list-item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.work-list-item {
-  background: linear-gradient(
-      0deg,
-      rgba(77, 90, 229, 0.1),
-      rgba(77, 90, 229, 0.1)
-    ),
-    url(2368.jpg);
-  background-blend-mode: soft-light, normal;
-  border: 1px solid var(--fiter-background-color);
-}
-
-.container-work {
-  padding-bottom: 120px;
-}
-
-/* стиль для H2 */
-.section-title {
-  margin-bottom: 72px;
-
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-}
-
-/* ==============================Наша команда секция======================= */
-.team-section {
-  background-color: var(--our-team-background-color);
-}
-
-.item-title-team {
-  margin-top: 32px;
-  margin-bottom: 8px;
-}
-
-.team-list {
-  display: flex;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.team-list-item {
-  flex-basis: calc((100% - 72px) / 4);
-  text-align: center;
-  padding-bottom: 32px;
-  background-color: var(--main-background-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.social-list-link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  border-radius: 50%;
-  background-color: var(--hero-button-background-color);
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--fiter-background-active-color);
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 16px;
-}
-
-.social-media-icon {
-  fill: #f4f4fd;
-}
+} */
 
 /* ===========================КЛИЕНТЫ================== */
 
