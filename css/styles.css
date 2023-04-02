@@ -92,6 +92,8 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mobile-menu-container {
@@ -101,9 +103,19 @@ body {
   padding-bottom: 40px;
 }
 
+.main-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+}
+
+.mobile-menu-one {
+  margin-bottom: auto;
+}
+
 @media screen and (min-width: 480px) {
   .container {
-    width: 426px;
+    max-width: 426px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -111,13 +123,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 766px;
+    max-width: 766px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
@@ -166,6 +178,9 @@ body {
 }
 
 /* ========================MPBILE MENU====================== */
+
+
+
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -234,9 +249,9 @@ body {
   color: var(--contacts-active-color);
 }
 
-.site-nav-mobile {
+/* .site-nav-mobile {
   margin-bottom: 264px;
-}
+} */
 
 .contacts-mobile {
   margin-bottom: 48px;
@@ -256,7 +271,11 @@ body {
   justify-content: left;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 479px) {
+  .contacts-mobile > .site-mav-mobile-item-tel {
+    font-size: 25px;
+  }
+
   .social-media-mobile {
     gap: 35px;
   }
@@ -278,11 +297,6 @@ body {
   .page-header {
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-
-  .page-header-container {
-    gap: 120px;
-    justify-content: left;
   }
 
   .page-nav {
@@ -440,6 +454,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
+  height: 432px;
+  align-items: center;
   padding-top: 112px;
   padding-bottom: 112px;
   background-image: linear-gradient(
@@ -451,6 +467,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--hero-background-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
@@ -500,6 +518,14 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/bg-tablet.jpg);
+    height: 436px;
+  }
+  .hero-title {
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: none;
+    width: 496px;
   }
 }
 
@@ -551,18 +577,18 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* ========================TABLET HERO====================== */
 
 @media screen and (min-width: 768px) {
-  .hero-title {
-    margin-bottom: 36px;
-    font-size: 56px;
-    line-height: 1.07;
-    max-width: none;
-    width: 496px;
-  }
 }
 
 /* ========================DESCTOP HERO====================== */
 
 @media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+  }
+
   .hero-title {
     margin-bottom: 48px;
   }
@@ -583,8 +609,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .container-advantages {
   padding-top: 96px;
   padding-bottom: 96px;
-  padding-right: 16px;
-  padding-left: 16px;
 }
 
 .item-title {
@@ -896,7 +920,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer-item {
   width: 264px;
-  margin-top: 16px;
+  margin-bottom: 72px;
+  margin-top: 17px;
 }
 
 .footer-social-media-block {
@@ -908,7 +933,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   letter-spacing: 0.02em;
   color: var(--filter-active-color);
   margin-bottom: 16px;
-  margin-top: 72px;
 }
 .footer-block {
   justify-content: center;
@@ -1040,8 +1064,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 768px) {
   .footer-full-flex {
+    width: 565px;
     align-items: baseline;
-    padding-left: 108px;
   }
 
   .subsribe-btn {
@@ -1081,6 +1105,9 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .footer-social-media-text {
     margin-top: 0;
   }
+  .footer-item {
+    margin-bottom: 0;
+  }
 }
 
 /* ===========================FOOTER DESCTOP================== */
@@ -1088,20 +1115,23 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px) {
   .footer-full-flex {
     flex-direction: row;
-    padding-left: 0;
+    width: unset;
+    row-gap: unset;
   }
 
   .footer-logo-block {
     margin-right: 120px;
   }
 
-  .footer-social-media-block {
-    margin-right: 80px;
-  }
+  
 
   .footer-subscribe-input {
     border: 1px solid var(--filter-active-color);
   }
+
+  .footer-tablet-wrapper {
+    column-gap: unset;
+    margin-right: 80px;
 }
 
 /* Страница ПОРТФОЛИО + унаследование своqств цвета для p которые лежат в ссылках s*/
@@ -1262,13 +1292,20 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
-  min-height: 586px;
+  width: 319px;
+  height: 620px;
   background: var(--main-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 392px;
+    min-height: 586px;
+  }
 }
 
 .modal-close-btn {
